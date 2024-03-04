@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: whitesmoke;
+}
+
+.movs {
+    height: 100%;
+    width: 100%;
+    
+}
+
+.header {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(7, 44, 7);
+    padding: 50px; 
+}
+
+.header img{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: -5px;
+    left: -400px;
+}
+
+.header input {
+    border-radius: 9px;
+    padding: 6px;
+    margin-bottom: 10px; 
+    border:0;
+    padding: 12px;
+    width:500px;
+    border-radius: 20px;
+    position: relative;
+    top: 0;
+    left: -30px;
+}
+.img1 {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.netflix {
+    position: relative;
+    left: 0px;
+    top: 20px;
+    box-shadow: 0 0 20px 10px rgba(30, 157, 30, 0.7); 
+    transition: 0.5s ease-in;
+}
+
+
+.login-btn{
+    display: flex;
+    position: relative;
+    left: 400px;
+    top: -5px;
+    background-color:  rgb(0, 0, 0);
+    padding: 10px;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+.login-btn:hover{
+    cursor: pointer;
+    background-color: rgb(62, 61, 61);
+    box-shadow: rgba(72, 135, 202, 0.8) 0 0 90px 33px;;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content:flex-start;   
+}
+.content h1{
+    height: 50px;
+    width: 100%;
+    
+}
+.movie-info{
+    display: flex;
+    align-items: flex-start;
+    width: 700px;
+    height: 450px;
+    margin-left: 20px;
+    margin-top: 30px;
+    background-color:rgb(63, 63, 73) ; 
+    border-radius: 20px;
+}
+
+
+.poster-box {
+    height: 450px;
+    width: 300px;
+    margin: 30px;
+    border: 1px solid black;
+    overflow: hidden;
+    border-radius: 9px;   
+}
+.text-container {
+    margin-top: 20px; 
+}
+
+.title, .subtitle {
+    display: block; 
+}
+.poster {
+   
+    max-width: 100%; 
+    min-width: 100%;
+    max-height: 100%; 
+    min-height: 100%;
+    transition: filter 0.3s ease; 
+}
+
+.poster:hover{
+    filter: grayscale(2px);
+}
+
+.welcome{
+    
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    background-color:black ;
+}
+.subtitle{
+    margin-left:20px;
+}
+.title{
+    color:rgb(216, 213, 216) ;
+    margin-left:10px;
+    font-size: 40px;
+}
+.rated{
+   font-size: smaller;
+   width:max-content;
+    border: 2px solid rgb(123, 123, 123);
+    border-radius: 9px;
+    padding: 3px;
+    background-color:rgb(24, 24, 24);
+    color: rgb(216, 213, 216);
+    display: inline;  
+}
+.imdb-rating,.year,.time{
+    margin-left:10px;
+    display: inline;
+    color: rgb(216, 213, 216);
+}
+.imdb-rating img{
+    height: 20px;
+    width: 40px;
+    position: relative;
+    top: 5px;
+    left: -5px;
+}
+.plot{
+    margin-top: 10px;
+    color: grey;
+    min-width: 300px;
+}
+
+.data ul{
+    padding-left: 0; 
+    margin-left: 0; 
+    list-style: none;
+}
+.data ul li {
+    padding-top: 6px;
+    color:rgb(129, 127, 129);
+    
+}
+
+.data ul li span{
+    color: #eee;
+}
+
+footer {
+    height:49px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+.btn{
+    background: transparent;
+    position: absolute;
+    border:0;
+    left:55rem;
+    top:1.5rem;
+    padding: 5px;
+}
+.btn i{
+    padding: 10px;
+}
+.btn :hover{
+    cursor: pointer;
+    background-color: grey;
+    border-radius: 10px;
+}
+.login-form{
+    color: white;
+    background-color: rgb(121, 92, 92);
+    width: 300px;
+    height: 330px;
+    border-radius: 20px;
+    padding: 50px;
+    border: 10px solid rgb(51, 49, 49);
+    position: absolute;
+    top: 150px;
+    left: 600px;
+    transition: 0.3s ease-in-out;
+}
+.login-form input , .sub{
+    border: 2px solid black;
+    padding: 10px; ;
+}
+.login-form .sub{
+    position: relative;
+    left: 50px;
+    background-color: rgb(16, 81, 16);
+    width: 80px;
+}
+.login-form h3{
+    text-align: center;
+}
+.close{
+    background-color: red;
+    border-radius: 200% 200% 200% 200%;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+.welcome{
+    background-color: rgb(27, 26, 26);
+    height: 600px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        height: auto;
+        padding: 20px;
+    }
+
+    .header{
+        width: 728px;
+    }
+    .header input {
+        width: 50%;
+    }
+    .btn{
+        position: relative;
+        left: -80px;
+        top: -3px;
+    }
+
+    .header img {
+        left: -50px;
+    }
+    .welcome{
+        width: 97%;
+        height: 1040px;
+    }
+    .login-form {
+        width: 50%;
+        left: 200px;
+    }
+
+    .movie-info {
+        width: 100%;
+        position: relative;
+        top: 50px;
+    }
+
+    .poster-box {
+        width: 50%;
+        position: relative;
+        left: 200px;
+        top: 20px;
+    }
+}
+
+/* Add this media query for mobile phones */
+@media only screen and (max-width: 480px) {
+    .header {
+        padding: 20px;
+    }
+
+    .header img {
+        left: 0;
+    }
+
+    .header input {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .btn {
+        left: 0;
+    }
+
+    .login-form {
+        width: 100%;
+        left: 0;
+    }
+
+    .movie-info {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .poster-box {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .header {
+        padding: 15px;
+    }
+
+    .header img {
+        left: 0;
+    }
+
+    .header input {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .btn {
+        left: 0;
+    }
+
+    .login-form {
+        width: 100%;
+        left: 0;
+    }
+
+    .movie-info {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .poster-box {
+        width: 100%;
+        margin: 0;
+    }
+}
